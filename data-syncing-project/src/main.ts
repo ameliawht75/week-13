@@ -236,3 +236,8 @@ try {
 
 // Attach the function to a button click event
 document.getElementById("delete-review-button")?.addEventListener("click", onDeleteReviewClick);
+
+// Attach event listeners to fetch buttons
+document.getElementById("fetch-books-button")?.addEventListener("click", onFetchBooksClick);
+document.getElementById("fetch-genres-button")?.addEventListener("click", onFetchGenresClick);
+document.getElementById("fetch-reviews-button")?.addEventListener("click", onFetchReviewsClick);
