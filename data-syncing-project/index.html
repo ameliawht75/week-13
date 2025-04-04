@@ -12,47 +12,34 @@
 
   <!-- Books -->
   <div class="container mt-5">
-    <button onclick="onFetchBooksClick()" class="btn btn-primary btn-lg">Fetch Books</button>
-    <button onclick="onCreateBookClick()" class="btn btn-success mx-3 btn-lg">Create Test Book</button>
+    <button id="fetch-books-button" class="btn btn-primary btn-lg">Fetch Books</button>
+    <button id="create-book-button" class="btn btn-success mx-3 btn-lg">Create Test Book</button>
     <button id="delete-book-button" class="btn btn-danger mx-3 btn-lg">Delete Test Book</button>  <!-- Added ID -->
     <div id="books-container"></div>
-
-    <div>
-      <button id="fetch-books-button">Fetch Books</button>
-      <div id="books-container"></div>
-    </div>
 
     <hr class="my-5"/>
 
     <!-- Genres -->
     <div class="d-flex text-nowrap">
-        <button onclick="onFetchGenresClick()" class="btn btn-primary btn-lg">Fetch Genres</button>
+        <button id="fetch-genres-button" class="btn btn-primary btn-lg">Fetch Genres</button>
         <button id="create-genre-button" class="btn btn-success mx-3 btn-lg">Create Test Genre</button> <!-- Added ID -->
         <input type="number" id="genre-id-textbox" class="form-control mx-2" placeholder="Genre ID">
         <button id="delete-genre-button" class="btn btn-danger mx-3 btn-lg">Delete Genre</button>
     </div>
     <div id="genres-container" class="mt-3"></div>
 
-    <div>
-      <button id="fetch-genres-button">Fetch Genres</button>
-      <div id="genres-container"></div>
-    </div>
-
     <hr class="my-5"/>
 
     <!-- Reviews -->
     <div class="d-flex text-nowrap">
-        <button onclick="onFetchReviewsClick()" class="btn btn-primary btn-lg">Fetch Reviews</button>
+        <button id="fetch-reviews-button" class="btn btn-primary btn-lg">Fetch Reviews</button>
         <button id="create-review-button" class="btn btn-success mx-3 btn-lg">Create Test Review</button> <!-- Added ID -->
         <input type="number" id="review-id-textbox" class="form-control mx-2" placeholder="Review ID">
         <button id="delete-review-button" class="btn btn-danger mx-3 btn-lg">Delete Review</button>
     </div>
     <div id="reviews-container" class="mt-3"></div>
-
-    <div>
-      <button id="fetch-reviews-button">Fetch Reviews</button>
-      <div id="reviews-container"></div>
     </div>
+
 </div>
 
 <script type="module" src="/src/main.ts"></script>
